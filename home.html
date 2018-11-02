@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>天猫tmall.com--上天猫，就够了</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <script type="text/javascript" src="home.js"></script>
+</head>
+
+<body>
+    <div onclick="hidelogin()" id="z-top" class="z-top"></div>
+    <div id="login1" class="login">
+        <a onclick="hideguanzhu('zhuce')" href="#">登录</a>
+        <a onclick="showguanzhu('zhuce')" href="#">注册</a>
+        <form id="denglu" name="denglu">
+            <div class="hengxian"></div>
+            <span>用户名：</span>
+            <input id="username1" placeholder="会员/邮箱/手机号" type="username" name="username">
+            <br>
+            <span>密&nbsp&nbsp&nbsp码：</span>
+            <input id="password1" type="password" name="password">
+            <br>
+            <button onclick="denglu1('username1','password1','denglu')" class="login-button" type="button">登录</button>
+        </form>
+        <form id="zhuce" name="zhuce">
+            <div id="hengxian2" class="hengxian"></div>
+            <span>用户名：</span>
+            <input onblur="long()" id="username2" placeholder="不超过10个字符" type="username" name="username">
+            <br>
+            <span>密&nbsp&nbsp&nbsp码：</span>
+            <input id="password2" type="password" name="password">
+            <br>
+            <button onclick="denglu1('username2','password2','zhuce')" class="login-button" type="button">注册</button>
+        </form>
+    </div>
+
+	<div class="search-fixed" id="search-fixed">
+		<div class="window-width">
+			<img class="float-left" src="images/logo2.png">
+			<input class="float-left" placeholder="输入商品搜索" type="text" name="search">
+			<button class="float-left" type="button">搜索</button>
+		</div>
+	</div>
+
+    <div class="welcome">
+        <div class="window-width clearfloat">
+            <span class="float-left">喵，欢迎来天猫</span>
+            <a onclick="login()" class="float-left" href="#">请登录</a>
+            <a onclick="login()" class="float-left" href="#">免费注册</a>
+            <a class="float-right" href="#" id="daohang" onmouseover="show('daohang','wangzhandaohang')" onmouseout="hide('daohang','wangzhandaohang')">网站导航</a>
+            <div id="wangzhandaohang" onmouseover="show('daohang','wangzhandaohang')" onmouseout="hide('daohang','wangzhandaohang')">
+                <div class="float-left">
+                    <span>热点推荐Hot</span>
+                    <div>
+                        <ul class="float-left">
+                            <li><a href="#">天猫超市</a></li>
+                            <li><a href="#">女装新品</a></li>
+                            <li><a href="#">试美妆</a></li>
+                            <li><a href="#">精明妈咪</a></li>
+                            <li><a href="#">会员积分</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">喵鲜生</a></li>
+                            <li><a href="#">酷玩街</a></li>
+                            <li><a href="#">运动新品</a></li>
+                            <li><a href="#">吃乐会</a></li>
+                            <li><a href="#">天猫国际</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">科技新品</a></li>
+                            <li><a href="#">内衣新品</a></li>
+                            <li><a href="#">时尚先生</a></li>
+                            <li><a href="#">企业采购</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="float-left shuxian"></div>
+                <div class="float-left">
+                    <span>行业市场Market</span>
+                    <div>
+                        <ul class="float-left">
+                            <li><a href="#">美妆</a></li>
+                            <li><a href="#">女鞋</a></li>
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">食品</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">电器</a></li>
+                            <li><a href="#">男鞋</a></li>
+                            <li><a href="#">母婴</a></li>
+                            <li><a href="#">配饰</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">女装</a></li>
+                            <li><a href="#">内衣</a></li>
+                            <li><a href="#">家装</a></li>
+                            <li><a href="#">汽车</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">男装</a></li>
+                            <li><a href="#">箱包</a></li>
+                            <li><a href="#">医药</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="float-left shuxian"></div>
+                <div class="float-left">
+                    <span>品牌风尚Brand</span>
+                    <div>
+                        <ul class="float-left">
+                            <li><a href="#">尚天猫</a></li>
+                            <li><a href="#">天猫原创</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">
+            					大牌街</a>
+                            </li>
+                            <li><a href="#">什么牌子好</a></li>
+                        </ul>
+                        <ul class="float-left">
+                            <li><a href="#">潮牌街</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="float-left shuxian"></div>
+                <div class="float-left">
+                    <span>服务指南Help</span>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">品质保障</a></li>
+                        <li><a href="#">特色服务</a></li>
+                        <li><a href="#">7天退换货</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="float-right" id="shangjia" href="#" onmouseover="show('shangjia','shangjiazhichi')" onmouseout="hide('shangjia','shangjiazhichi')">商家支持</a>
+            <div id="shangjiazhichi" class="clearfloat" onmouseover="show('shangjia','shangjiazhichi')" onmouseout="hide('shangjia','shangjiazhichi')">
+                <div><span>商家：</span></div>
+                <div class="clearfloat">
+                    <ul class="float-left">
+                        <li><a href="#">商家中心</a></li>
+                        <li><a href="#">运营服务</a></li>
+                        <li><a href="#">商家工具</a></li>
+                        <li><a href="#">天猫智库</a></li>
+                    </ul>
+                    <ul class="float-right">
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家品控</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">喵言喵语</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div><span>帮助：</span></div>
+                <a href="#">帮助中心</a>
+            </div>
+            <a class="float-right" href="#">企业购</a>
+            <a class="float-right" href="#">淘宝网</a>
+            <a class="float-right" href="#">手机版</a>
+            <a id="shoucang" onmouseover="show('shoucang','shoucangjia')" onmouseout="hide('shoucang','shoucangjia')" class="float-right" href="#">收藏夹</a>
+            <ul id="shoucangjia" onmouseover="show('shoucang','shoucangjia')" onmouseout="hide('shoucang','shoucangjia')">
+                <li><a href="#">收藏的宝贝</a></li>
+                <li><a href="#">收藏的店铺</a></li>
+            </ul>
+            <a class="float-right" href="#">购物车0件</a>
+            <a class="float-right" href="#">我关注的品牌</a>
+            <a class="float-right" id="taobao" onmouseover="show('taobao','wodetaobao')" onmouseout="hide('taobao','wodetaobao')" href="#">我的淘宝</a>
+            <ul id="wodetaobao" onmouseover="show('taobao','wodetaobao')" onmouseout="hide('taobao','wodetaobao')">
+                <li><a href="#">已买到的宝贝</a></li>
+                <li><a href="#">已卖出的宝贝</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search ">
+        <div class="window-width clearfloat">
+            <img class="float-left" src="images/logo.png" />
+            <div class="float-left search1">
+                <span class="input-boder float-left"><input type="text" placeholder="输入商品搜索" name="search"/></span>
+                <button type="button" class="float-left">搜索</button>
+                <ul class="">
+                    <li class="float-left"><a href="#">t恤男</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">连衣裙</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">夏凉被</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">电动牙刷</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">卧室灯</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">防晒衣</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">凉鞋</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">双肩包</a></li>
+                    <li class="shuxian float-left"></li>
+                    <li class="float-left"><a href="#">口红</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fenlei clearfloat">
+        <div class="window-width">
+            <a class="float-left shangpin" href="#">商品分类</a>
+            <a class="float-left" href="#">天猫超市</a>
+            <a class="float-left" href="#">天猫国际</a>
+            <a class="float-left" href="#">天猫会员</a>
+            <a class="float-left" href="#">品牌街</a>
+            <a class="float-left" href="#">电器城</a>
+            <a class="float-left" href="#">喵鲜生</a>
+            <a class="float-left" href="#">医药馆</a>
+            <a class="float-left" href="#">营业厅</a>
+            <a class="float-left" href="#">魅力惠</a>
+            <a class="float-left" href="#">飞猪旅行</a>
+            <a class="float-left" href="#">苏宁易购</a>
+        </div>
+    </div>
+    <div class="jutifenlei">
+        <img id="bg" src="images/bg1.jpg" />
+        <div class="window-width">
+            <div class="lunbo-button">
+                <button id="bg1" value="0" onmouseover="lunbo2('bg1')" class="float-left"><img src="images/bg1.jpg" /></button>
+                <button id="bg2" value="1" onmouseover="lunbo2('bg2')" class="float-left"><img src="images/bg2.jpg" /></button>
+                <button id="bg3" value="2" onmouseover="lunbo2('bg3')" class="float-left"><img src="images/bg3.jpg" /></button>
+                <button id="bg4" value="3" onmouseover="lunbo2('bg4')" class="float-left"><img src="images/bg4.jpg" /></button>
+                <button id="bg5" value="4" onmouseover="lunbo2('bg5')" class="float-left"><img src="images/bg5.jpg" /></button>
+            </div>
+            <a href="#">
+                <img id="lunbo" onmouseover="stop1()" onmouseout="start1()" class="lunbo" src="images/bg1.jpg" />
+            </a>
+            <ul class="left-menu">
+                <li id="nvzhuang1" onmouseover="show('nvzhuang1','nvzhuang')" onmouseout="hide('nvzhuang1','nvzhuang')"><a href="#">女装/内衣</a></li>
+                <li id="nanzhuang1" onmouseover="show('nanzhuang1','nanzhuang')" onmouseout="hide('nanzhuang1','nanzhuang')"><a href="#">男装/运动户外</a></li>
+                <li id="nvxie1" onmouseover="show('nvxie1','nvxie')" onmouseout="hide('nvxie1','nvxie')"><a href="#">女鞋/男鞋/箱包</a></li>
+                <li id="huazhuangpin1" onmouseover="show('huazhuangpin1','huazhuangpin')" onmouseout="hide('huazhuangpin1','huazhuangpin')"><a href="#">化妆品/个人护理</a></li>
+                <li id="wanbiao1" onmouseover="show('wanbiao1','wanbiao')" onmouseout="hide('wanbiao1','wanbiao')"><a href="#">腕表/珠宝饰品/眼镜</a></li>
+                <li id="shouji1" onmouseover="show('shouji1','shouji')" onmouseout="hide('shouji1','shouji')"><a href="#">手机/数码/电脑办公</a></li>
+                <li id="muying1" onmouseover="show('muying1','muying')" onmouseout="hide('muying1','muying')"><a href="#">母婴玩具</a></li>
+                <li id="linfshi1" onmouseover="show('linfshi1','linfshi')" onmouseout="hide('linfshi1','linfshi')"><a href="#">零食/进口食品/茶酒</a></li>
+                <li id="shengxian1" onmouseover="show('shengxian1','shengxian')" onmouseout="hide('shengxian1','shengxian')"><a href="#">生鲜水果</a></li>
+                <li id="dadianqi1" onmouseover="show('dadianqi1','dadianqi')" onmouseout="hide('dadianqi1','dadianqi')"><a href="#">大家电/生活电器</a></li>
+                <li id="jiaju1" onmouseover="show('jiaju1','jiaju')" onmouseout="hide('jiaju1','jiaju')"><a href="#">家具建材</a></li>
+                <li id="qiche1" onmouseover="show('qiche1','qiche')" onmouseout="hide('qiche1','qiche')"><a href="#">汽车/配件/用品</a></li>
+                <li id="jiafang1" onmouseover="show('jiafang1','jiafang')" onmouseout="hide('jiafang1','jiafang')"><a href="#">家纺/家饰/鲜花</a></li>
+                <li id="yiyao1" onmouseover="show('yiyao1','yiyao')" onmouseout="hide('yiyao1','yiyao')"><a href="#">医药保健</a></li>
+                <li id="chuju1" onmouseover="show('chuju1','chuju')" onmouseout="hide('chuju1','chuju')"><a href="#">厨具/收纳/宠物</a></li>
+                <li id="tushu1" onmouseover="show('tushu1','tushu')" onmouseout="hide('tushu1','tushu')"><a href="#">图书音像</a></li>
+            </ul>
+            <div id="nvzhuang" onmouseover="show('nvzhuang1','nvzhuang')" onmouseout="hide('nvzhuang1','nvzhuang')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">当季流行></span>
+                    <ul>
+                        <li class="float-left"><a href="#">2017春季新品</a></li>
+                        <li class="float-left"><a href="#">商城同款</a></li>
+                        <li class="float-left"><a href="#">气质连衣裙</a></li>
+                        <li class="float-left"><a href="#">衬衫</a></li>
+                        <li class="float-left"><a href="#">牛仔单品</a></li>
+                        <li class="float-left"><a href="#">百搭休闲裤</a></li>
+                        <li class="float-left"><a href="#">无痕文胸</a></li>
+                        <li class="float-left"><a href="#">运动文胸</a></li>
+                        <li class="float-left"><a href="#">超柔内裤</a></li>
+                        <li class="float-left"><a href="#">潮流家居服</a></li>
+                        <li class="float-left"><a href="#">百搭船袜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">精选上装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">针织衫</a></li>
+                        <li class="float-left"><a href="#">T恤</a></li>
+                        <li class="float-left"><a href="#">毛衣</a></li>
+                        <li class="float-left"><a href="#">衬衫</a></li>
+                        <li class="float-left"><a href="#">风衣</a></li>
+                        <li class="float-left"><a href="#">短外套</a></li>
+                        <li class="float-left"><a href="#">卫衣</a></li>
+                        <li class="float-left"><a href="#">小西装</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">浪漫裙装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">连衣裙</a></li>
+                        <li class="float-left"><a href="#">蕾丝连衣裙</a></li>
+                        <li class="float-left"><a href="#">印花连衣裙</a></li>
+                        <li class="float-left"><a href="#">真丝连衣裙</a></li>
+                        <li class="float-left"><a href="#">半身裙</a></li>
+                        <li class="float-left"><a href="#">百褶裙</a></li>
+                        <li class="float-left"><a href="#">牛仔裙</a></li>
+                        <li class="float-left"><a href="#">背心裙</a></li>
+                        <li class="float-left"><a href="#">a字裙</a></li>
+                        <li class="float-left"><a href="#">棉麻连衣裙</a></li>
+                        <li class="float-left"><a href="#">蕾丝半身裙</a></li>
+                        <li class="float-left"><a href="#">包臀裙</a></li>
+                        <li class="float-left"><a href="#">长袖连衣裙</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">女士下装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牛仔裤</a></li>
+                        <li class="float-left"><a href="#">休闲裤</a></li>
+                        <li class="float-left"><a href="#">哈伦裤</a></li>
+                        <li class="float-left"><a href="#">背带裤</a></li>
+                        <li class="float-left"><a href="#">小脚裤</a></li>
+                        <li class="float-left"><a href="#">西装裤</a></li>
+                        <li class="float-left"><a href="#">打底裤</a></li>
+                        <li class="float-left"><a href="#">阔腿裤</a></li>
+                        <li class="float-left"><a href="#">短裤</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">特色女装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">时尚气质套装</a></li>
+                        <li class="float-left"><a href="#">休闲运动套装</a></li>
+                        <li class="float-left"><a href="#">精选妈妈装</a></li>
+                        <li class="float-left"><a href="#">大码女装</a></li>
+                        <li class="float-left"><a href="#">职业套装</a></li>
+                        <li class="float-left"><a href="#">优雅旗袍</a></li>
+                        <li class="float-left"><a href="#">精致礼服</a></li>
+                        <li class="float-left"><a href="#">婚纱</a></li>
+                        <li class="float-left"><a href="#">唐装</a></li>
+                        <li class="float-left"><a href="#">小码女装</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">文胸塑身></span>
+                    <ul>
+                        <li class="float-left"><a href="#">光面文胸</a></li>
+                        <li class="float-left"><a href="#">运动文胸</a></li>
+                        <li class="float-left"><a href="#">美背文胸</a></li>
+                        <li class="float-left"><a href="#">聚拢文胸</a></li>
+                        <li class="float-left"><a href="#">大杯文胸</a></li>
+                        <li class="float-left"><a href="#">轻薄塑身</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">家居服></span>
+                    <ul>
+                        <li class="float-left"><a href="#">春夏家居服</a></li>
+                        <li class="float-left"><a href="#">纯棉家居服</a></li>
+                        <li class="float-left"><a href="#">莫代尔家居服</a></li>
+                        <li class="float-left"><a href="#">真丝家居服</a></li>
+                        <li class="float-left"><a href="#">春夏睡裙</a></li>
+                        <li class="float-left"><a href="#">男士家居服</a></li>
+                        <li class="float-left"><a href="#">情侣家居服</a></li>
+                        <li class="float-left"><a href="#">性感睡裙</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">内裤背心></span>
+                    <ul>
+                        <li class="float-left"><a href="#">男士内裤</a></li>
+                        <li class="float-left"><a href="#">女士内裤</a></li>
+                        <li class="float-left"><a href="#">男士内裤多条装</a></li>
+                        <li class="float-left"><a href="#">女士内裤多条装</a></li>
+                        <li class="float-left"><a href="#">莫代尔内裤</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">袜类></span>
+                    <ul>
+                        <li class="float-left"><a href="#">船袜</a></li>
+                        <li class="float-left"><a href="#">长筒丝袜</a></li>
+                        <li class="float-left"><a href="#">男士运动袜</a></li>
+                        <li class="float-left"><a href="#">女士装饰袜</a></li>
+                        <li class="float-left"><a href="#">潮流渔网袜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="nanzhuang" onmouseover="show('nanzhuang1','nanzhuang')" onmouseout="hide('nanzhuang1','nanzhuang')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">当季流行></span>
+                    <ul>
+                        <li class="float-left"><a href="#">夏季新品</a></li>
+                        <li class="float-left"><a href="#">商城同款</a></li>
+                        <li class="float-left"><a href="#">短袖T恤</a></li>
+                        <li class="float-left"><a href="#">POLO衫</a></li>
+                        <li class="float-left"><a href="#">短袖衬衫</a></li>
+                        <li class="float-left"><a href="#">棉麻质感</a></li>
+                        <li class="float-left"><a href="#">牛仔衬衫</a></li>
+                        <li class="float-left"><a href="#">修身夹克</a></li>
+                        <li class="float-left"><a href="#">潮流卫衣</a></li>
+                        <li class="float-left"><a href="#">长袖衬衫</a></li>
+                        <li class="float-left"><a href="#">束脚裤</a></li>
+                        <li class="float-left"><a href="#">九分裤</a></li>
+                        <li class="float-left"><a href="#">破洞牛仔裤</a></li>
+                        <li class="float-left"><a href="#">健身套装</a></li>
+                        <li class="float-left"><a href="#">划船机</a></li>
+                        <li class="float-left"><a href="#">泳衣</a></li>
+                        <li class="float-left"><a href="#">跑步鞋</a></li>
+                        <li class="float-left"><a href="#">自行车</a></li>
+                        <li class="float-left"><a href="#">平衡车</a></li>
+                        <li class="float-left"><a href="#">篮球鞋</a></li>
+                        <li class="float-left"><a href="#">帆布鞋</a></li>
+                        <li class="float-left"><a href="#">休闲鞋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">男士外套></span>
+                    <ul>
+                        <li class="float-left"><a href="#">夹克</a></li>
+                        <li class="float-left"><a href="#">单西</a></li>
+                        <li class="float-left"><a href="#">棒球服</a></li>
+                        <li class="float-left"><a href="#">棉衣</a></li>
+                        <li class="float-left"><a href="#">大衣</a></li>
+                        <li class="float-left"><a href="#">风衣</a></li>
+                        <li class="float-left"><a href="#">西服套装</a></li>
+                        <li class="float-left"><a href="#">羽绒服</a></li>
+                        <li class="float-left"><a href="#">皮衣</a></li>
+                        <li class="float-left"><a href="#">运动服</a></li>
+                        <li class="float-left"><a href="#">工装外套</a></li>
+                        <li class="float-left"><a href="#">针织开衫</a></li>
+                        <li class="float-left"><a href="#">马甲</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">男士内搭></span>
+                    <ul>
+                        <li class="float-left"><a href="#">短袖T恤</a></li>
+                        <li class="float-left"><a href="#">POLO衫</a></li>
+                        <li class="float-left"><a href="#">长袖T恤</a></li>
+                        <li class="float-left"><a href="#">短袖衬衫</a></li>
+                        <li class="float-left"><a href="#">长袖衬衫</a></li>
+                        <li class="float-left"><a href="#">卫衣</a></li>
+                        <li class="float-left"><a href="#">针织衫/毛衣</a></li>
+                        <li class="float-left"><a href="#">背心</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">男士裤装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">休闲裤</a></li>
+                        <li class="float-left"><a href="#">牛仔裤</a></li>
+                        <li class="float-left"><a href="#">西裤</a></li>
+                        <li class="float-left"><a href="#">运动裤</a></li>
+                        <li class="float-left"><a href="#">小脚裤</a></li>
+                        <li class="float-left"><a href="#">针织裤</a></li>
+                        <li class="float-left"><a href="#">工装裤</a></li>
+                        <li class="float-left"><a href="#">9分裤</a></li>
+                        <li class="float-left"><a href="#">短裤</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">特色男装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">潮牌</a></li>
+                        <li class="float-left"><a href="#">中老年</a></li>
+                        <li class="float-left"><a href="#">加大码</a></li>
+                        <li class="float-left"><a href="#">职场精英</a></li>
+                        <li class="float-left"><a href="#">中国风</a></li>
+                        <li class="float-left"><a href="#">情侣装</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">运动服></span>
+                    <ul>
+                        <li class="float-left"><a href="#">短袖T恤</a></li>
+                        <li class="float-left"><a href="#">运动裤</a></li>
+                        <li class="float-left"><a href="#">运动内衣</a></li>
+                        <li class="float-left"><a href="#">速干T恤</a></li>
+                        <li class="float-left"><a href="#">运动POLO</a></li>
+                        <li class="float-left"><a href="#">运动卫衣</a></li>
+                        <li class="float-left"><a href="#">运动套装</a></li>
+                        <li class="float-left"><a href="#">运动短裤</a></li>
+                        <li class="float-left"><a href="#">健身服</a></li>
+                        <li class="float-left"><a href="#">运动夹克</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">户外用户></span>
+                    <ul>
+                        <li class="float-left"><a href="#">钓竿</a></li>
+                        <li class="float-left"><a href="#">双肩背包</a></li>
+                        <li class="float-left"><a href="#">防晒衣</a></li>
+                        <li class="float-left"><a href="#">户外包</a></li>
+                        <li class="float-left"><a href="#">帐篷</a></li>
+                        <li class="float-left"><a href="#">手电筒</a></li>
+                        <li class="float-left"><a href="#">刀具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">运动用户></span>
+                    <ul>
+                        <li class="float-left"><a href="#">跑步机</a></li>
+                        <li class="float-left"><a href="#">瑜伽垫</a></li>
+                        <li class="float-left"><a href="#">泳衣</a></li>
+                        <li class="float-left"><a href="#">瑜伽服</a></li>
+                        <li class="float-left"><a href="#">羽毛球拍</a></li>
+                        <li class="float-left"><a href="#">自行车</a></li>
+                        <li class="float-left"><a href="#">电动车</a></li>
+                        <li class="float-left"><a href="#">篮球</a></li>
+                        <li class="float-left"><a href="#">足球</a></li>
+                        <li class="float-left"><a href="#">运动护具</a></li>
+                        <li class="float-left"><a href="#">健身器械</a></li>
+                        <li class="float-left"><a href="#">网球拍</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="nvxie" onmouseover="show('nvxie1','nvxie')" onmouseout="hide('nvxie1','nvxie')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">推荐女鞋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">永远的帆布鞋</a></li>
+                        <li class="float-left"><a href="#">舒适平底单鞋</a></li>
+                        <li class="float-left"><a href="#">布洛克牛津鞋</a></li>
+                        <li class="float-left"><a href="#">彩色豆豆鞋</a></li>
+                        <li class="float-left"><a href="#">流行松糕鞋</a></li>
+                        <li class="float-left"><a href="#">气质通勤</a></li>
+                        <li class="float-left"><a href="#">欧美街头</a></li>
+                        <li class="float-left"><a href="#">甜美优雅</a></li>
+                        <li class="float-left"><a href="#">运动风格</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">潮流男鞋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">商场同款</a></li>
+                        <li class="float-left"><a href="#">休闲鞋</a></li>
+                        <li class="float-left"><a href="#">正装皮鞋</a></li>
+                        <li class="float-left"><a href="#">休闲皮鞋</a></li>
+                        <li class="float-left"><a href="#">板鞋</a></li>
+                        <li class="float-left"><a href="#">户外休闲</a></li>
+                        <li class="float-left"><a href="#">帆布鞋</a></li>
+                        <li class="float-left"><a href="#">运动休闲</a></li>
+                        <li class="float-left"><a href="#">乐福鞋</a></li>
+                        <li class="float-left"><a href="#">豆豆鞋</a></li>
+                        <li class="float-left"><a href="#">布洛克</a></li>
+                        <li class="float-left"><a href="#">帆船鞋</a></li>
+                        <li class="float-left"><a href="#">布鞋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">女单鞋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">单鞋</a></li>
+                        <li class="float-left"><a href="#">小白鞋</a></li>
+                        <li class="float-left"><a href="#">商场同款</a></li>
+                        <li class="float-left"><a href="#">帆布鞋</a></li>
+                        <li class="float-left"><a href="#">深口单鞋</a></li>
+                        <li class="float-left"><a href="#">浅口单鞋</a></li>
+                        <li class="float-left"><a href="#">平底单鞋</a></li>
+                        <li class="float-left"><a href="#">高跟单鞋</a></li>
+                        <li class="float-left"><a href="#">坡跟单鞋</a></li>
+                        <li class="float-left"><a href="#">豆豆鞋</a></li>
+                        <li class="float-left"><a href="#">乐福鞋</a></li>
+                        <li class="float-left"><a href="#">牛津鞋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">特色鞋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">妈妈鞋</a></li>
+                        <li class="float-left"><a href="#">大码女鞋</a></li>
+                        <li class="float-left"><a href="#">小码女鞋</a></li>
+                        <li class="float-left"><a href="#">女内增高</a></li>
+                        <li class="float-left"><a href="#">男内增高</a></li>
+                        <li class="float-left"><a href="#">软轻风</a></li>
+                        <li class="float-left"><a href="#">爸爸鞋</a></li>
+                        <li class="float-left"><a href="#">大码男鞋</a></li>
+                        <li class="float-left"><a href="#">小码男鞋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">潮流女包></span>
+                    <ul>
+                        <li class="float-left"><a href="#">新品推荐</a></li>
+                        <li class="float-left"><a href="#">商场同款</a></li>
+                        <li class="float-left"><a href="#">女士钱包</a></li>
+                        <li class="float-left"><a href="#">单肩包</a></li>
+                        <li class="float-left"><a href="#">斜挎包</a></li>
+                        <li class="float-left"><a href="#">手提包</a></li>
+                        <li class="float-left"><a href="#">手拿包</a></li>
+                        <li class="float-left"><a href="#">腰包</a></li>
+                        <li class="float-left"><a href="#">胸包</a></li>
+                        <li class="float-left"><a href="#">化妆包</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">精品男包></span>
+                    <ul>
+                        <li class="float-left"><a href="#">男士钱包</a></li>
+                        <li class="float-left"><a href="#">收纳包</a></li>
+                        <li class="float-left"><a href="#">胸包</a></li>
+                        <li class="float-left"><a href="#">腰包</a></li>
+                        <li class="float-left"><a href="#">手拿包</a></li>
+                        <li class="float-left"><a href="#">手提包</a></li>
+                        <li class="float-left"><a href="#">斜挎包</a></li>
+                        <li class="float-left"><a href="#">单肩包</a></li>
+                        <li class="float-left"><a href="#">商场同款</a></li>
+                        <li class="float-left"><a href="#">商品推荐</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">功能箱包></span>
+                    <ul>
+                        <li class="float-left"><a href="#">旅行箱</a></li>
+                        <li class="float-left"><a href="#">万向轮箱</a></li>
+                        <li class="float-left"><a href="#">旅行袋</a></li>
+                        <li class="float-left"><a href="#">女士双肩包</a></li>
+                        <li class="float-left"><a href="#">男士双肩包</a></li>
+                        <li class="float-left"><a href="#">韩版双肩包</a></li>
+                        <li class="float-left"><a href="#">铆钉双肩包</a></li>
+                        <li class="float-left"><a href="#">女士钱包</a></li>
+                        <li class="float-left"><a href="#">男士钱包</a></li>
+                        <li class="float-left"><a href="#">大容量</a></li>
+                        <li class="float-left"><a href="#">印花</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="huazhuangpin" onmouseover="show('huazhuangpin1','huazhuangpin')" onmouseout="hide('huazhuangpin1','huazhuangpin')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">护肤品></span>
+                    <ul>
+                        <li class="float-left"><a href="#">官方直售</a></li>
+                        <li class="float-left"><a href="#">面膜</a></li>
+                        <li class="float-left"><a href="#">护肤套装</a></li>
+                        <li class="float-left"><a href="#">乳液面霜</a></li>
+                        <li class="float-left"><a href="#">精华液</a></li>
+                        <li class="float-left"><a href="#">护手霜</a></li>
+                        <li class="float-left"><a href="#">爽肤水</a></li>
+                        <li class="float-left"><a href="#">洁面眼霜</a></li>
+                        <li class="float-left"><a href="#">身体乳</a></li>
+                        <li class="float-left"><a href="#">卸妆</a></li>
+                        <li class="float-left"><a href="#">身体护理</a></li>
+                        <li class="float-left"><a href="#">男士护理</a></li>
+                        <li class="float-left"><a href="#">精油芳疗</a></li>
+                        <li class="float-left"><a href="#">丰胸</a></li>
+                        <li class="float-left"><a href="#">面部喷雾</a></li>
+                        <li class="float-left"><a href="#">T区护理</a></li>
+                        <li class="float-left"><a href="#">去角质</a></li>
+                        <li class="float-left"><a href="#">补水</a></li>
+                        <li class="float-left"><a href="#">祛痘</a></li>
+                        <li class="float-left"><a href="#">敏感修护</a></li>
+                        <li class="float-left"><a href="#">线上专柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">彩妆></span>
+                    <ul>
+                        <li class="float-left"><a href="#">时尚彩妆</a></li>
+                        <li class="float-left"><a href="#">香水</a></li>
+                        <li class="float-left"><a href="#">BB霜</a></li>
+                        <li class="float-left"><a href="#">美容工具</a></li>
+                        <li class="float-left"><a href="#">口红</a></li>
+                        <li class="float-left"><a href="#">隔离</a></li>
+                        <li class="float-left"><a href="#">粉底</a></li>
+                        <li class="float-left"><a href="#">粉饼</a></li>
+                        <li class="float-left"><a href="#">气垫BB</a></li>
+                        <li class="float-left"><a href="#">指甲油</a></li>
+                        <li class="float-left"><a href="#">美甲工具</a></li>
+                        <li class="float-left"><a href="#">眉笔</a></li>
+                        <li class="float-left"><a href="#">睫毛膏</a></li>
+                        <li class="float-left"><a href="#">眼线</a></li>
+                        <li class="float-left"><a href="#">唇彩</a></li>
+                        <li class="float-left"><a href="#">眼影</a></li>
+                        <li class="float-left"><a href="#">蜜粉</a></li>
+                        <li class="float-left"><a href="#">彩妆套装</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">男士护肤></span>
+                    <ul>
+                        <li class="float-left"><a href="#">洁面</a></li>
+                        <li class="float-left"><a href="#">爽肤水</a></li>
+                        <li class="float-left"><a href="#">乳液/面霜</a></li>
+                        <li class="float-left"><a href="#">面膜</a></li>
+                        <li class="float-left"><a href="#">面部精华</a></li>
+                        <li class="float-left"><a href="#">眼部护理</a></li>
+                        <li class="float-left"><a href="#">防晒</a></li>
+                        <li class="float-left"><a href="#">唇部护理</a></li>
+                        <li class="float-left"><a href="#">T区护理</a></li>
+                        <li class="float-left"><a href="#">控油</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">肤质推选></span>
+                    <ul>
+                        <li class="float-left"><a href="#">混合偏油型</a></li>
+                        <li class="float-left"><a href="#">中性偏干型</a></li>
+                        <li class="float-left"><a href="#">敏感型</a></li>
+                        <li class="float-left"><a href="#">干型</a></li>
+                        <li class="float-left"><a href="#">油型</a></li>
+                        <li class="float-left"><a href="#">混合型</a></li>
+                        <li class="float-left"><a href="#">中型</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">美发护发></span>
+                    <ul>
+                        <li class="float-left"><a href="#">洗发水</a></li>
+                        <li class="float-left"><a href="#">进口洗发水</a></li>
+                        <li class="float-left"><a href="#">护发素</a></li>
+                        <li class="float-left"><a href="#">发膜</a></li>
+                        <li class="float-left"><a href="#">护发精油</a></li>
+                        <li class="float-left"><a href="#">头发造型</a></li>
+                        <li class="float-left"><a href="#">弹力素</a></li>
+                        <li class="float-left"><a href="#">染发霜</a></li>
+                        <li class="float-left"><a href="#">整顶假发</a></li>
+                        <li class="float-left"><a href="#">假发配件</a></li>
+                        <li class="float-left"><a href="#">男性假发</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">口腔护理></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牙膏</a></li>
+                        <li class="float-left"><a href="#">进口牙膏</a></li>
+                        <li class="float-left"><a href="#">牙刷</a></li>
+                        <li class="float-left"><a href="#">进口牙刷</a></li>
+                        <li class="float-left"><a href="#">漱口水</a></li>
+                        <li class="float-left"><a href="#">牙线</a></li>
+                        <li class="float-left"><a href="#">牙粉</a></li>
+                        <li class="float-left"><a href="#">口气清新剂</a></li>
+                        <li class="float-left"><a href="#">牙贴</a></li>
+                        <li class="float-left"><a href="#">口腔美白</a></li>
+                        <li class="float-left"><a href="#">假牙清洁</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">身体女性></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沐浴露</a></li>
+                        <li class="float-left"><a href="#">香皂</a></li>
+                        <li class="float-left"><a href="#">泡澡浴盐</a></li>
+                        <li class="float-left"><a href="#">护足</a></li>
+                        <li class="float-left"><a href="#">洗手液</a></li>
+                        <li class="float-left"><a href="#">手动剃须刀</a></li>
+                        <li class="float-left"><a href="#">卫生巾</a></li>
+                        <li class="float-left"><a href="#">成人护垫</a></li>
+                        <li class="float-left"><a href="#">卫生棉条</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="wanbiao" onmouseover="show('wanbiao1','wanbiao')" onmouseout="hide('wanbiao1','wanbiao')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">黄金首饰></span>
+                    <ul>
+                        <li class="float-left"><a href="#">耳钉</a></li>
+                        <li class="float-left"><a href="#">黄金项链</a></li>
+                        <li class="float-left"><a href="#">投资黄金</a></li>
+                        <li class="float-left"><a href="#">婚嫁套饰</a></li>
+                        <li class="float-left"><a href="#">转运珠</a></li>
+                        <li class="float-left"><a href="#">黄金对戒</a></li>
+                        <li class="float-left"><a href="#">足金饰品</a></li>
+                        <li class="float-left"><a href="#">K金饰品</a></li>
+                        <li class="float-left"><a href="#">商场同款</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">钻石彩宝></span>
+                    <ul>
+                        <li class="float-left"><a href="#">结婚钻戒</a></li>
+                        <li class="float-left"><a href="#">钻石耳饰</a></li>
+                        <li class="float-left"><a href="#">钻石吊坠</a></li>
+                        <li class="float-left"><a href="#">钻石手链</a></li>
+                        <li class="float-left"><a href="#">裸钻定制</a></li>
+                        <li class="float-left"><a href="#">红蓝宝石</a></li>
+                        <li class="float-left"><a href="#">绿宝石</a></li>
+                        <li class="float-left"><a href="#">坦桑石</a></li>
+                        <li class="float-left"><a href="#">其他天然宝石</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">珍珠玉翠></span>
+                    <ul>
+                        <li class="float-left"><a href="#">珍珠项链送妈妈</a></li>
+                        <li class="float-left"><a href="#">海水珍珠</a></li>
+                        <li class="float-left"><a href="#">和田玉</a></li>
+                        <li class="float-left"><a href="#">翡翠摆件</a></li>
+                        <li class="float-left"><a href="#">翡翠手镯</a></li>
+                        <li class="float-left"><a href="#">翡翠项链</a></li>
+                        <li class="float-left"><a href="#">琥珀手链</a></li>
+                        <li class="float-left"><a href="#">天然琥珀</a></li>
+                        <li class="float-left"><a href="#">原矿琥珀</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">潮流饰品></span>
+                    <ul>
+                        <li class="float-left"><a href="#">明星同款</a></li>
+                        <li class="float-left"><a href="#">传统银饰</a></li>
+                        <li class="float-left"><a href="#">木手串</a></li>
+                        <li class="float-left"><a href="#">银手镯</a></li>
+                        <li class="float-left"><a href="#">石榴石手链</a></li>
+                        <li class="float-left"><a href="#">开口戒指</a></li>
+                        <li class="float-left"><a href="#">胸针</a></li>
+                        <li class="float-left"><a href="#">宝宝银饰</a></li>
+                        <li class="float-left"><a href="#">手链</a></li>
+                        <li class="float-left"><a href="#">项链</a></li>
+                        <li class="float-left"><a href="#">发饰</a></li>
+                        <li class="float-left"><a href="#">手镯</a></li>
+                        <li class="float-left"><a href="#">耳饰</a></li>
+                        <li class="float-left"><a href="#">戒指</a></li>
+                        <li class="float-left"><a href="#">项坠</a></li>
+                        <li class="float-left"><a href="#">施华洛世奇</a></li>
+                        <li class="float-left"><a href="#">shes</a></li>
+                        <li class="float-left"><a href="#">银时代</a></li>
+                        <li class="float-left"><a href="#">伊泰莲娜</a></li>
+                        <li class="float-left"><a href="#">PH7</a></li>
+                        <li class="float-left"><a href="#">Minchhichi</a></li>
+                        <li class="float-left"><a href="#">ALEXANDRE</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">腕表></span>
+                    <ul>
+                        <li class="float-left"><a href="#">瑞士名表</a></li>
+                        <li class="float-left"><a href="#">日韩港表</a></li>
+                        <li class="float-left"><a href="#">欧美手表</a></li>
+                        <li class="float-left"><a href="#">经典国表</a></li>
+                        <li class="float-left"><a href="#">国货精表</a></li>
+                        <li class="float-left"><a href="#">男表</a></li>
+                        <li class="float-left"><a href="#">女表</a></li>
+                        <li class="float-left"><a href="#">情侣表</a></li>
+                        <li class="float-left"><a href="#">儿童手表</a></li>
+                        <li class="float-left"><a href="#">机械表</a></li>
+                        <li class="float-left"><a href="#">石英表</a></li>
+                        <li class="float-left"><a href="#">光能表</a></li>
+                        <li class="float-left"><a href="#">防水表</a></li>
+                        <li class="float-left"><a href="#">运动表</a></li>
+                        <li class="float-left"><a href="#">学生表</a></li>
+                        <li class="float-left"><a href="#">军表</a></li>
+                        <li class="float-left"><a href="#">陶瓷表</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">眼镜></span>
+                    <ul>
+                        <li class="float-left"><a href="#">太阳镜</a></li>
+                        <li class="float-left"><a href="#">墨镜</a></li>
+                        <li class="float-left"><a href="#">眼镜框</a></li>
+                        <li class="float-left"><a href="#">近视眼镜</a></li>
+                        <li class="float-left"><a href="#">防辐射眼镜</a></li>
+                        <li class="float-left"><a href="#">老花镜</a></li>
+                        <li class="float-left"><a href="#">司机镜</a></li>
+                        <li class="float-left"><a href="#">偏光镜</a></li>
+                        <li class="float-left"><a href="#">驾驶镜</a></li>
+                        <li class="float-left"><a href="#">3D眼镜</a></li>
+                        <li class="float-left"><a href="#">雷朋</a></li>
+                        <li class="float-left"><a href="#">暴龙</a></li>
+                        <li class="float-left"><a href="#">宝岛眼镜</a></li>
+                        <li class="float-left"><a href="#">oakley</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">烟具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">电子烟</a></li>
+                        <li class="float-left"><a href="#">烟盒</a></li>
+                        <li class="float-left"><a href="#">烟斗</a></li>
+                        <li class="float-left"><a href="#">烟嘴</a></li>
+                        <li class="float-left"><a href="#">烟油</a></li>
+                        <li class="float-left"><a href="#">蒸汽烟</a></li>
+                        <li class="float-left"><a href="#">水烟</a></li>
+                        <li class="float-left"><a href="#">戒烟</a></li>
+                        <li class="float-left"><a href="#">女士烟</a></li>
+                        <li class="float-left"><a href="#">鼻烟</a></li>
+                        <li class="float-left"><a href="#">雪茄</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="shouji" onmouseover="show('shouji1','shouji')" onmouseout="hide('shouji1','shouji')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">热门手机></span>
+                    <ul>
+                        <li class="float-left"><a href="#">小米</a></li>
+                        <li class="float-left"><a href="#">iPhone</a></li>
+                        <li class="float-left"><a href="#">魅族</a></li>
+                        <li class="float-left"><a href="#">荣耀</a></li>
+                        <li class="float-left"><a href="#">乐视</a></li>
+                        <li class="float-left"><a href="#">OPPO</a></li>
+                        <li class="float-left"><a href="#">vivo</a></li>
+                        <li class="float-left"><a href="#">三星</a></li>
+                        <li class="float-left"><a href="#">华为</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">特色手机></span>
+                    <ul>
+                        <li class="float-left"><a href="#">YunOS</a></li>
+                        <li class="float-left"><a href="#">千元指纹</a></li>
+                        <li class="float-left"><a href="#">双卡双待</a></li>
+                        <li class="float-left"><a href="#">大屏</a></li>
+                        <li class="float-left"><a href="#">自拍</a></li>
+                        <li class="float-left"><a href="#">移动</a></li>
+                        <li class="float-left"><a href="#">联通</a></li>
+                        <li class="float-left"><a href="#">电信</a></li>
+                        <li class="float-left"><a href="#">合约机</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">电脑整机></span>
+                    <ul>
+                        <li class="float-left"><a href="#">笔记本</a></li>
+                        <li class="float-left"><a href="#">平板电脑</a></li>
+                        <li class="float-left"><a href="#">台式机</a></li>
+                        <li class="float-left"><a href="#">一体机</a></li>
+                        <li class="float-left"><a href="#">DIY</a></li>
+                        <li class="float-left"><a href="#">游戏本</a></li>
+                        <li class="float-left"><a href="#">iPad</a></li>
+                        <li class="float-left"><a href="#">Surface</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">智能数码></span>
+                    <ul>
+                        <li class="float-left"><a href="#">智能设备</a></li>
+                        <li class="float-left"><a href="#">智能手表</a></li>
+                        <li class="float-left"><a href="#">智能手环</a></li>
+                        <li class="float-left"><a href="#">VR眼镜</a></li>
+                        <li class="float-left"><a href="#">智能摄像</a></li>
+                        <li class="float-left"><a href="#">智能健康</a></li>
+                        <li class="float-left"><a href="#">智能机器人</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">游戏组装></span>
+                    <ul>
+                        <li class="float-left"><a href="#">DIY电脑</a></li>
+                        <li class="float-left"><a href="#">竞技DIY</a></li>
+                        <li class="float-left"><a href="#">显示器</a></li>
+                        <li class="float-left"><a href="#">游戏本</a></li>
+                        <li class="float-left"><a href="#">机械键盘</a></li>
+                        <li class="float-left"><a href="#">XBOX</a></li>
+                        <li class="float-left"><a href="#">游戏手柄</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">硬件存储></span>
+                    <ul>
+                        <li class="float-left"><a href="#">显示器</a></li>
+                        <li class="float-left"><a href="#">机械键盘</a></li>
+                        <li class="float-left"><a href="#">固态硬盘</a></li>
+                        <li class="float-left"><a href="#">CPU</a></li>
+                        <li class="float-left"><a href="#">显卡</a></li>
+                        <li class="float-left"><a href="#">主板</a></li>
+                        <li class="float-left"><a href="#">高速U盘</a></li>
+                        <li class="float-left"><a href="#">路由器</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">摄影摄像></span>
+                    <ul>
+                        <li class="float-left"><a href="#">相机</a></li>
+                        <li class="float-left"><a href="#">单反</a></li>
+                        <li class="float-left"><a href="#">单电微单</a></li>
+                        <li class="float-left"><a href="#">摄像机</a></li>
+                        <li class="float-left"><a href="#">自拍神器</a></li>
+                        <li class="float-left"><a href="#">拍立得</a></li>
+                        <li class="float-left"><a href="#">镜头</a></li>
+                        <li class="float-left"><a href="#">自拍杆</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">影音娱乐></span>
+                    <ul>
+                        <li class="float-left"><a href="#">耳机</a></li>
+                        <li class="float-left"><a href="#">天猫魔盒</a></li>
+                        <li class="float-left"><a href="#">数码影音</a></li>
+                        <li class="float-left"><a href="#">家庭影院</a></li>
+                        <li class="float-left"><a href="#">蓝牙耳机</a></li>
+                        <li class="float-left"><a href="#">网络播放器</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">办公文教></span>
+                    <ul>
+                        <li class="float-left"><a href="#">文具</a></li>
+                        <li class="float-left"><a href="#">电子书</a></li>
+                        <li class="float-left"><a href="#">笔类/书写工具</a></li>
+                        <li class="float-left"><a href="#">智能投影</a></li>
+                        <li class="float-left"><a href="#">打印机</a></li>
+                        <li class="float-left"><a href="#">保险箱</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">数码配件></span>
+                    <ul>
+                        <li class="float-left"><a href="#">手机配件</a></li>
+                        <li class="float-left"><a href="#">苹果配件</a></li>
+                        <li class="float-left"><a href="#">笔记本配件</a></li>
+                        <li class="float-left"><a href="#">平板配件</a></li>
+                        <li class="float-left"><a href="#">相机配件</a></li>
+                        <li class="float-left"><a href="#">手机车载配件</a></li>
+                        <li class="float-left"><a href="#">kindle配件</a></li>
+                        <li class="float-left"><a href="#">充电宝</a></li>
+                        <li class="float-left"><a href="#">自拍杆</a></li>
+                        <li class="float-left"><a href="#">数据线</a></li>
+                        <li class="float-left"><a href="#">电池</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="muying" onmouseover="show('muying1','muying')" onmouseout="hide('muying1','muying')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">童鞋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">学步鞋</a></li>
+                        <li class="float-left"><a href="#">运动鞋</a></li>
+                        <li class="float-left"><a href="#">帆布鞋</a></li>
+                        <li class="float-left"><a href="#">皮鞋</a></li>
+                        <li class="float-left"><a href="#">雨靴</a></li>
+                        <li class="float-left"><a href="#">靴子</a></li>
+                        <li class="float-left"><a href="#">棉鞋</a></li>
+                        <li class="float-left"><a href="#">拖鞋</a></li>
+                        <li class="float-left"><a href="#">亲子鞋</a></li>
+                        <li class="float-left"><a href="#">凉鞋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">车床用品></span>
+                    <ul>
+                        <li class="float-left"><a href="#">婴儿推车</a></li>
+                        <li class="float-left"><a href="#">学步车</a></li>
+                        <li class="float-left"><a href="#">安全座椅</a></li>
+                        <li class="float-left"><a href="#">婴儿背带</a></li>
+                        <li class="float-left"><a href="#">腰凳</a></li>
+                        <li class="float-left"><a href="#">婴儿床</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">睡袋</a></li>
+                        <li class="float-left"><a href="#">抱被</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">喂养></span>
+                    <ul>
+                        <li class="float-left"><a href="#">奶瓶</a></li>
+                        <li class="float-left"><a href="#">奶嘴</a></li>
+                        <li class="float-left"><a href="#">水杯</a></li>
+                        <li class="float-left"><a href="#">餐具</a></li>
+                        <li class="float-left"><a href="#">消毒锅</a></li>
+                        <li class="float-left"><a href="#">辅食机</a></li>
+                        <li class="float-left"><a href="#">调奶器</a></li>
+                        <li class="float-left"><a href="#">暖奶器</a></li>
+                        <li class="float-left"><a href="#">围嘴</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">洗护></span>
+                    <ul>
+                        <li class="float-left"><a href="#">洗发水</a></li>
+                        <li class="float-left"><a href="#">沐浴露</a></li>
+                        <li class="float-left"><a href="#">润肤</a></li>
+                        <li class="float-left"><a href="#">浴盆</a></li>
+                        <li class="float-left"><a href="#">湿巾</a></li>
+                        <li class="float-left"><a href="#">洗衣液</a></li>
+                        <li class="float-left"><a href="#">洗衣皂</a></li>
+                        <li class="float-left"><a href="#">理发器</a></li>
+                        <li class="float-left"><a href="#">驱虫止痒</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">玩具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">婴儿玩具</a></li>
+                        <li class="float-left"><a href="#">儿童自行车</a></li>
+                        <li class="float-left"><a href="#">儿童电动车</a></li>
+                        <li class="float-left"><a href="#">毛绒玩具</a></li>
+                        <li class="float-left"><a href="#">积木</a></li>
+                        <li class="float-left"><a href="#">电动遥控</a></li>
+                        <li class="float-left"><a href="#">儿童箱包</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">天猫动漫></span>
+                    <ul>
+                        <li class="float-left"><a href="#">动漫周边</a></li>
+                        <li class="float-left"><a href="#">影视周边</a></li>
+                        <li class="float-left"><a href="#">手办</a></li>
+                        <li class="float-left"><a href="#">高达</a></li>
+                        <li class="float-left"><a href="#">魔术道具</a></li>
+                        <li class="float-left"><a href="#">COSPLAY</a></li>
+                        <li class="float-left"><a href="#">桌游</a></li>
+                        <li class="float-left"><a href="#">变形金刚</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">奶粉></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牛奶粉</a></li>
+                        <li class="float-left"><a href="#">羊奶粉</a></li>
+                        <li class="float-left"><a href="#">特殊配方奶粉</a></li>
+                        <li class="float-left"><a href="#">宝宝辅食</a></li>
+                        <li class="float-left"><a href="#">宝宝零食</a></li>
+                        <li class="float-left"><a href="#">宝宝营养</a></li>
+                        <li class="float-left"><a href="#">DHA</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">孕产></span>
+                    <ul>
+                        <li class="float-left"><a href="#">孕产用品</a></li>
+                        <li class="float-left"><a href="#">孕妈洗护</a></li>
+                        <li class="float-left"><a href="#">孕妈装</a></li>
+                        <li class="float-left"><a href="#">月子服</a></li>
+                        <li class="float-left"><a href="#">哺乳文胸</a></li>
+                        <li class="float-left"><a href="#">防辐射</a></li>
+                        <li class="float-left"><a href="#">吸奶器</a></li>
+                        <li class="float-left"><a href="#">待产包</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="linfshi" onmouseover="show('linfshi1','linfshi')" onmouseout="hide('linfshi1','linfshi')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">进口食品></span>
+                    <ul>
+                        <li class="float-left"><a href="#">进口零食</a></li>
+                        <li class="float-left"><a href="#">进口巧克力</a></li>
+                        <li class="float-left"><a href="#">进口饼干</a></li>
+                        <li class="float-left"><a href="#">进口糖果</a></li>
+                        <li class="float-left"><a href="#">进口坚果</a></li>
+                        <li class="float-left"><a href="#">进口果干</a></li>
+                        <li class="float-left"><a href="#">进口橄榄油</a></li>
+                        <li class="float-left"><a href="#">进口牛奶</a></li>
+                        <li class="float-left"><a href="#">进口咖啡</a></li>
+                        <li class="float-left"><a href="#">进口饮料</a></li>
+                        <li class="float-left"><a href="#">进口葡萄酒</a></li>
+                        <li class="float-left"><a href="#">进口洋酒</a></li>
+                        <li class="float-left"><a href="#">进口啤酒</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">休闲零食></span>
+                    <ul>
+                        <li class="float-left"><a href="#">零食</a></li>
+                        <li class="float-left"><a href="#">坚果</a></li>
+                        <li class="float-left"><a href="#">饼干</a></li>
+                        <li class="float-left"><a href="#">蛋糕</a></li>
+                        <li class="float-left"><a href="#">红枣</a></li>
+                        <li class="float-left"><a href="#">巧克力</a></li>
+                        <li class="float-left"><a href="#">猪肉脯</a></li>
+                        <li class="float-left"><a href="#">膨化食品</a></li>
+                        <li class="float-left"><a href="#">蜜饯</a></li>
+                        <li class="float-left"><a href="#">鸭脖</a></li>
+                        <li class="float-left"><a href="#">糖果</a></li>
+                        <li class="float-left"><a href="#">豆干</a></li>
+                        <li class="float-left"><a href="#">曲奇</a></li>
+                        <li class="float-left"><a href="#">海苔</a></li>
+                        <li class="float-left"><a href="#">肉松饼</a></li>
+                        <li class="float-left"><a href="#">牛肉干</a></li>
+                        <li class="float-left"><a href="#">鱿鱼丝</a></li>
+                        <li class="float-left"><a href="#">糕点</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">酒类></span>
+                    <ul>
+                        <li class="float-left"><a href="#">白酒</a></li>
+                        <li class="float-left"><a href="#">红酒</a></li>
+                        <li class="float-left"><a href="#">洋酒</a></li>
+                        <li class="float-left"><a href="#">啤酒</a></li>
+                        <li class="float-left"><a href="#">黄酒</a></li>
+                        <li class="float-left"><a href="#">保健酒</a></li>
+                        <li class="float-left"><a href="#">预调酒</a></li>
+                        <li class="float-left"><a href="#">配制酒</a></li>
+                        <li class="float-left"><a href="#">葡萄酒</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">茶叶></span>
+                    <ul>
+                        <li class="float-left"><a href="#">西湖龙井</a></li>
+                        <li class="float-left"><a href="#">安吉白茶</a></li>
+                        <li class="float-left"><a href="#">绿茶</a></li>
+                        <li class="float-left"><a href="#">大红袍</a></li>
+                        <li class="float-left"><a href="#">铁观音</a></li>
+                        <li class="float-left"><a href="#">普洱茶</a></li>
+                        <li class="float-left"><a href="#">玫瑰花茶</a></li>
+                        <li class="float-left"><a href="#">柠檬片</a></li>
+                        <li class="float-left"><a href="#">菊花茶</a></li>
+                        <li class="float-left"><a href="#">花茶</a></li>
+                        <li class="float-left"><a href="#">天然粉粉</a></li>
+                        <li class="float-left"><a href="#">金骏眉</a></li>
+                        <li class="float-left"><a href="#">红茶</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">乳品冲饮></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牛奶</a></li>
+                        <li class="float-left"><a href="#">酸奶</a></li>
+                        <li class="float-left"><a href="#">成人奶粉</a></li>
+                        <li class="float-left"><a href="#">儿童奶</a></li>
+                        <li class="float-left"><a href="#">速溶咖啡</a></li>
+                        <li class="float-left"><a href="#">滤挂咖啡</a></li>
+                        <li class="float-left"><a href="#">咖啡豆</a></li>
+                        <li class="float-left"><a href="#">麦片</a></li>
+                        <li class="float-left"><a href="#">奶茶</a></li>
+                        <li class="float-left"><a href="#">柚子茶</a></li>
+                        <li class="float-left"><a href="#">果汁</a></li>
+                        <li class="float-left"><a href="#">汽水</a></li>
+                        <li class="float-left"><a href="#">功能饮料</a></li>
+                        <li class="float-left"><a href="#">饮用水</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">粮油速食></span>
+                    <ul>
+                        <li class="float-left"><a href="#">橄榄油</a></li>
+                        <li class="float-left"><a href="#">食用油</a></li>
+                        <li class="float-left"><a href="#">大米</a></li>
+                        <li class="float-left"><a href="#">薏米</a></li>
+                        <li class="float-left"><a href="#">玉米</a></li>
+                        <li class="float-left"><a href="#">面粉</a></li>
+                        <li class="float-left"><a href="#">银耳</a></li>
+                        <li class="float-left"><a href="#">桂圆干</a></li>
+                        <li class="float-left"><a href="#">香肠</a></li>
+                        <li class="float-left"><a href="#">木耳</a></li>
+                        <li class="float-left"><a href="#">香菇</a></li>
+                        <li class="float-left"><a href="#">方便面</a></li>
+                        <li class="float-left"><a href="#">手抓饼</a></li>
+                        <li class="float-left"><a href="#">黄油</a></li>
+                        <li class="float-left"><a href="#">意大利面</a></li>
+                        <li class="float-left"><a href="#">蛋挞皮</a></li>
+                        <li class="float-left"><a href="#">调味品</a></li>
+                        <li class="float-left"><a href="#">红糖</a></li>
+                        <li class="float-left"><a href="#">进口泡面</a></li>
+                        <li class="float-left"><a href="#">粽子</a></li>
+                        <li class="float-left"><a href="#">寿司</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">生鲜水果></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牛排</a></li>
+                        <li class="float-left"><a href="#">芒果</a></li>
+                        <li class="float-left"><a href="#">奇异果</a></li>
+                        <li class="float-left"><a href="#">蟹</a></li>
+                        <li class="float-left"><a href="#">三文鱼</a></li>
+                        <li class="float-left"><a href="#">虾</a></li>
+                        <li class="float-left"><a href="#">车厘子</a></li>
+                        <li class="float-left"><a href="#">进口鳕鱼</a></li>
+                        <li class="float-left"><a href="#">海参</a></li>
+                        <li class="float-left"><a href="#">苹果</a></li>
+                        <li class="float-left"><a href="#">榴莲</a></li>
+                        <li class="float-left"><a href="#">牛肉</a></li>
+                        <li class="float-left"><a href="#">牛油果</a></li>
+                        <li class="float-left"><a href="#">土鸡</a></li>
+                        <li class="float-left"><a href="#">冰淇淋</a></li>
+                        <li class="float-left"><a href="#">鸡蛋</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="shengxian" onmouseover="show('shengxian1','shengxian')" onmouseout="hide('shengxian1','shengxian')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">新鲜蔬菜></span>
+                    <ul>
+                        <li class="float-left"><a href="#">土豆</a></li>
+                        <li class="float-left"><a href="#">番薯</a></li>
+                        <li class="float-left"><a href="#">山药</a></li>
+                        <li class="float-left"><a href="#">莲藕</a></li>
+                        <li class="float-left"><a href="#">净菜</a></li>
+                        <li class="float-left"><a href="#">玉米</a></li>
+                        <li class="float-left"><a href="#">秋葵</a></li>
+                        <li class="float-left"><a href="#">大蒜</a></li>
+                        <li class="float-left"><a href="#">生姜</a></li>
+                        <li class="float-left"><a href="#">南瓜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">冰淇淋></span>
+                    <ul>
+                        <li class="float-left"><a href="#">冰淇淋</a></li>
+                        <li class="float-left"><a href="#">哈根达斯</a></li>
+                        <li class="float-left"><a href="#">movenpick莫凡彼</a></li>
+                        <li class="float-left"><a href="#">本杰瑞</a></li>
+                        <li class="float-left"><a href="#">tip-top冰淇淋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">蛋类></span>
+                    <ul>
+                        <li class="float-left"><a href="#">鸡蛋</a></li>
+                        <li class="float-left"><a href="#">鸭蛋</a></li>
+                        <li class="float-left"><a href="#">鹅蛋</a></li>
+                        <li class="float-left"><a href="#">鸽子蛋</a></li>
+                        <li class="float-left"><a href="#">鹌鹑蛋</a></li>
+                        <li class="float-left"><a href="#">松花皮蛋</a></li>
+                        <li class="float-left"><a href="#">咸鸭蛋</a></li>
+                        <li class="float-left"><a href="#">喜蛋</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">肉类></span>
+                    <ul>
+                        <li class="float-left"><a href="#">牛排</a></li>
+                        <li class="float-left"><a href="#">牛腩</a></li>
+                        <li class="float-left"><a href="#">牛腱子</a></li>
+                        <li class="float-left"><a href="#">牛肉</a></li>
+                        <li class="float-left"><a href="#">牛尾</a></li>
+                        <li class="float-left"><a href="#">牛肉串</a></li>
+                        <li class="float-left"><a href="#">牛杂</a></li>
+                        <li class="float-left"><a href="#">羊腿</a></li>
+                        <li class="float-left"><a href="#">羊排</a></li>
+                        <li class="float-left"><a href="#">羊肉串</a></li>
+                        <li class="float-left"><a href="#">羊蝎子</a></li>
+                        <li class="float-left"><a href="#">鸡肉</a></li>
+                        <li class="float-left"><a href="#">鸡翅</a></li>
+                        <li class="float-left"><a href="#">鸭肉</a></li>
+                        <li class="float-left"><a href="#">鸡腿</a></li>
+                        <li class="float-left"><a href="#">乳鸽</a></li>
+                        <li class="float-left"><a href="#">鹅肉</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">海鲜水产></span>
+                    <ul>
+                        <li class="float-left"><a href="#">鳕鱼</a></li>
+                        <li class="float-left"><a href="#">三文鱼</a></li>
+                        <li class="float-left"><a href="#">金枪鱼</a></li>
+                        <li class="float-left"><a href="#">鲽鱼</a></li>
+                        <li class="float-left"><a href="#">斑鱼</a></li>
+                        <li class="float-left"><a href="#">比目鱼</a></li>
+                        <li class="float-left"><a href="#">多春鱼</a></li>
+                        <li class="float-left"><a href="#">马鲛鱼</a></li>
+                        <li class="float-left"><a href="#">龙利鱼</a></li>
+                        <li class="float-left"><a href="#">秋刀鱼</a></li>
+                        <li class="float-left"><a href="#">带鱼</a></li>
+                        <li class="float-left"><a href="#">海带</a></li>
+                        <li class="float-left"><a href="#">墨鱼</a></li>
+                        <li class="float-left"><a href="#">海参</a></li>
+                        <li class="float-left"><a href="#">海蜇</a></li>
+                        <li class="float-left"><a href="#">鱿鱼</a></li>
+                        <li class="float-left"><a href="#">甲鱼</a></li>
+                        <li class="float-left"><a href="#">大闸蟹</a></li>
+                        <li class="float-left"><a href="#">帝王蟹</a></li>
+                        <li class="float-left"><a href="#">雪蟹</a></li>
+                        <li class="float-left"><a href="#">黄金蟹</a></li>
+                        <li class="float-left"><a href="#">鱼丸</a></li>
+                        <li class="float-left"><a href="#">鱼糕/鱼饼</a></li>
+                        <li class="float-left"><a href="#">干贝/瑶柱</a></li>
+                        <li class="float-left"><a href="#">虾仁</a></li>
+                        <li class="float-left"><a href="#">冻虾</a></li>
+                        <li class="float-left"><a href="#">生蚝</a></li>
+                        <li class="float-left"><a href="#">北极贝</a></li>
+                        <li class="float-left"><a href="#">扇贝</a></li>
+                        <li class="float-left"><a href="#">贝类</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">新鲜水果></span>
+                    <ul>
+                        <li class="float-left"><a href="#">奇异果</a></li>
+                        <li class="float-left"><a href="#">车厘子/樱桃</a></li>
+                        <li class="float-left"><a href="#">芒果</a></li>
+                        <li class="float-left"><a href="#">牛油果</a></li>
+                        <li class="float-left"><a href="#">火龙果</a></li>
+                        <li class="float-left"><a href="#">苹果</a></li>
+                        <li class="float-left"><a href="#">橙子</a></li>
+                        <li class="float-left"><a href="#">凤梨</a></li>
+                        <li class="float-left"><a href="#">榴莲</a></li>
+                        <li class="float-left"><a href="#">山竹</a></li>
+                        <li class="float-left"><a href="#">木瓜</a></li>
+                        <li class="float-left"><a href="#">柠檬</a></li>
+                        <li class="float-left"><a href="#">百香果</a></li>
+                        <li class="float-left"><a href="#">椰青</a></li>
+                        <li class="float-left"><a href="#">番荔枝/释迦</a></li>
+                        <li class="float-left"><a href="#">龙眼</a></li>
+                        <li class="float-left"><a href="#">蓝莓</a></li>
+                        <li class="float-left"><a href="#">梨</a></li>
+                        <li class="float-left"><a href="#">提子</a></li>
+                        <li class="float-left"><a href="#">柚子</a></li>
+                        <li class="float-left"><a href="#">芭乐</a></li>
+                        <li class="float-left"><a href="#">莲雾</a></li>
+                        <li class="float-left"><a href="#">桃</a></li>
+                        <li class="float-left"><a href="#">草莓</a></li>
+                        <li class="float-left"><a href="#">西柚</a></li>
+                        <li class="float-left"><a href="#">荔枝</a></li>
+                        <li class="float-left"><a href="#">石榴</a></li>
+                        <li class="float-left"><a href="#">葡萄</a></li>
+                        <li class="float-left"><a href="#">哈密瓜</a></li>
+                        <li class="float-left"><a href="#">琵琶</a></li>
+                        <li class="float-left"><a href="#">李子</a></li>
+                        <li class="float-left"><a href="#">西瓜</a></li>
+                        <li class="float-left"><a href="#">菠萝</a></li>
+                        <li class="float-left"><a href="#">桔子</a></li>
+                        <li class="float-left"><a href="#">香蕉</a></li>
+                        <li class="float-left"><a href="#">杨桃</a></li>
+                        <li class="float-left"><a href="#">红毛丹/毛荔枝</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">精选干货></span>
+                    <ul>
+                        <li class="float-left"><a href="#">干贝/瑶柱</a></li>
+                        <li class="float-left"><a href="#">虾皮/虾米/海米</a></li>
+                        <li class="float-left"><a href="#">大虾干</a></li>
+                        <li class="float-left"><a href="#">花胶/鱼胶</a></li>
+                        <li class="float-left"><a href="#">海带</a></li>
+                        <li class="float-left"><a href="#">紫菜</a></li>
+                        <li class="float-left"><a href="#">鱼干</a></li>
+                        <li class="float-left"><a href="#">墨鱼干</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="dadianqi" onmouseover="show('dadianqi1','dadianqi')" onmouseout="hide('dadianqi1','dadianqi')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">平板电视></span>
+                    <ul>
+                        <li class="float-left"><a href="#">4K高清</a></li>
+                        <li class="float-left"><a href="#">国产</a></li>
+                        <li class="float-left"><a href="#">外资品牌</a></li>
+                        <li class="float-left"><a href="#">曲面</a></li>
+                        <li class="float-left"><a href="#">智能电视</a></li>
+                        <li class="float-left"><a href="#">超级大屏</a></li>
+                        <li class="float-left"><a href="#">云电视</a></li>
+                        <li class="float-left"><a href="#">客厅首选</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">空调></span>
+                    <ul>
+                        <li class="float-left"><a href="#">热门之选</a></li>
+                        <li class="float-left"><a href="#">节能</a></li>
+                        <li class="float-left"><a href="#">智能</a></li>
+                        <li class="float-left"><a href="#">变频</a></li>
+                        <li class="float-left"><a href="#">艺术柜机</a></li>
+                        <li class="float-left"><a href="#">挂机</a></li>
+                        <li class="float-left"><a href="#">1.5匹</a></li>
+                        <li class="float-left"><a href="#">中央空调</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">冰箱></span>
+                    <ul>
+                        <li class="float-left"><a href="#">热门之选</a></li>
+                        <li class="float-left"><a href="#">无霜</a></li>
+                        <li class="float-left"><a href="#">三门</a></li>
+                        <li class="float-left"><a href="#">对开门</a></li>
+                        <li class="float-left"><a href="#">电脑温控</a></li>
+                        <li class="float-left"><a href="#">智能</a></li>
+                        <li class="float-left"><a href="#">冷柜</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">洗衣机></span>
+                    <ul>
+                        <li class="float-left"><a href="#">滚筒洗</a></li>
+                        <li class="float-left"><a href="#">波轮洗</a></li>
+                        <li class="float-left"><a href="#">洗烘一体</a></li>
+                        <li class="float-left"><a href="#">迷你</a></li>
+                        <li class="float-left"><a href="#">烘干机</a></li>
+                        <li class="float-left"><a href="#">双缸/双桶</a></li>
+                        <li class="float-left"><a href="#">热门</a></li>
+                        <li class="float-left"><a href="#">大容量</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">厨房大电></span>
+                    <ul>
+                        <li class="float-left"><a href="#">烟灶套装</a></li>
+                        <li class="float-left"><a href="#">侧吸油烟机</a></li>
+                        <li class="float-left"><a href="#">欧式油烟机</a></li>
+                        <li class="float-left"><a href="#">燃气灶</a></li>
+                        <li class="float-left"><a href="#">消毒柜</a></li>
+                        <li class="float-left"><a href="#">洗碗机</a></li>
+                        <li class="float-left"><a href="#">集成灶</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">热水器></span>
+                    <ul>
+                        <li class="float-left"><a href="#">电热水器</a></li>
+                        <li class="float-left"><a href="#">燃气热水器</a></li>
+                        <li class="float-left"><a href="#">遥控</a></li>
+                        <li class="float-left"><a href="#">恒温</a></li>
+                        <li class="float-left"><a href="#">小厨宝</a></li>
+                        <li class="float-left"><a href="#">太阳能</a></li>
+                        <li class="float-left"><a href="#">即热式</a></li>
+                        <li class="float-left"><a href="#">空气能</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">中式厨房></span>
+                    <ul>
+                        <li class="float-left"><a href="#">净水器</a></li>
+                        <li class="float-left"><a href="#">电饭煲</a></li>
+                        <li class="float-left"><a href="#">豆浆机</a></li>
+                        <li class="float-left"><a href="#">电热水壶</a></li>
+                        <li class="float-left"><a href="#">电压力锅</a></li>
+                        <li class="float-left"><a href="#">电磁炉</a></li>
+                        <li class="float-left"><a href="#">养生壶</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">西式厨房></span>
+                    <ul>
+                        <li class="float-left"><a href="#">烤箱</a></li>
+                        <li class="float-left"><a href="#">料理机</a></li>
+                        <li class="float-left"><a href="#">微波炉</a></li>
+                        <li class="float-left"><a href="#">榨汁机</a></li>
+                        <li class="float-left"><a href="#">原汁机</a></li>
+                        <li class="float-left"><a href="#">面包机</a></li>
+                        <li class="float-left"><a href="#">咖啡机</a></li>
+                        <li class="float-left"><a href="#">电炸锅</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">生活电器></span>
+                    <ul>
+                        <li class="float-left"><a href="#">扫地机器人</a></li>
+                        <li class="float-left"><a href="#">空气净化器</a></li>
+                        <li class="float-left"><a href="#">吸尘器</a></li>
+                        <li class="float-left"><a href="#">除湿机</a></li>
+                        <li class="float-left"><a href="#">电风扇</a></li>
+                        <li class="float-left"><a href="#">挂烫机</a></li>
+                        <li class="float-left"><a href="#">干衣机</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">个护健康></span>
+                    <ul>
+                        <li class="float-left"><a href="#">剃须刀</a></li>
+                        <li class="float-left"><a href="#">吹风机</a></li>
+                        <li class="float-left"><a href="#">电动牙刷</a></li>
+                        <li class="float-left"><a href="#">体重枰</a></li>
+                        <li class="float-left"><a href="#">理发器</a></li>
+                        <li class="float-left"><a href="#">足浴器</a></li>
+                        <li class="float-left"><a href="#">按摩椅</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">精品推荐></span>
+                    <ul>
+                        <li class="float-left"><a href="#">脱毛器</a></li>
+                        <li class="float-left"><a href="#">吊扇</a></li>
+                        <li class="float-left"><a href="#">冰淇淋机</a></li>
+                        <li class="float-left"><a href="#">碎冰机</a></li>
+                        <li class="float-left"><a href="#">空调扇</a></li>
+                        <li class="float-left"><a href="#">瘦身带</a></li>
+                        <li class="float-left"><a href="#">冷饮机</a></li>
+                        <li class="float-left"><a href="#">炒冰机</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="jiaju" onmouseover="show('jiaju1','jiaju')" onmouseout="hide('jiaju1','jiaju')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">卧室家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">床</a></li>
+                        <li class="float-left"><a href="#">衣柜</a></li>
+                        <li class="float-left"><a href="#">简易衣柜</a></li>
+                        <li class="float-left"><a href="#">乳胶床垫</a></li>
+                        <li class="float-left"><a href="#">弹簧床垫</a></li>
+                        <li class="float-left"><a href="#">棕床垫</a></li>
+                        <li class="float-left"><a href="#">实木床</a></li>
+                        <li class="float-left"><a href="#">双人床</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">书房儿童></span>
+                    <ul>
+                        <li class="float-left"><a href="#">电脑桌</a></li>
+                        <li class="float-left"><a href="#">书桌</a></li>
+                        <li class="float-left"><a href="#">办公桌</a></li>
+                        <li class="float-left"><a href="#">书架</a></li>
+                        <li class="float-left"><a href="#">书柜</a></li>
+                        <li class="float-left"><a href="#">儿童床</a></li>
+                        <li class="float-left"><a href="#">儿童学习桌</a></li>
+                        <li class="float-left"><a href="#">儿童衣柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">家装主材></span>
+                    <ul>
+                        <li class="float-left"><a href="#">强化复合地板</a></li>
+                        <li class="float-left"><a href="#">瓷砖</a></li>
+                        <li class="float-left"><a href="#">墙纸</a></li>
+                        <li class="float-left"><a href="#">涂料</a></li>
+                        <li class="float-left"><a href="#">油漆</a></li>
+                        <li class="float-left"><a href="#">地板</a></li>
+                        <li class="float-left"><a href="#">硅藻泥</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">厨房卫浴></span>
+                    <ul>
+                        <li class="float-left"><a href="#">浴霸</a></li>
+                        <li class="float-left"><a href="#">集成吊顶</a></li>
+                        <li class="float-left"><a href="#">马桶</a></li>
+                        <li class="float-left"><a href="#">淋雨花洒套装</a></li>
+                        <li class="float-left"><a href="#">浴室柜组合</a></li>
+                        <li class="float-left"><a href="#">水草套餐</a></li>
+                        <li class="float-left"><a href="#">智能马桶盖</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">灯饰照明></span>
+                    <ul>
+                        <li class="float-left"><a href="#">吊灯</a></li>
+                        <li class="float-left"><a href="#">吸顶灯</a></li>
+                        <li class="float-left"><a href="#">水晶吊灯</a></li>
+                        <li class="float-left"><a href="#">筒灯</a></li>
+                        <li class="float-left"><a href="#">射灯</a></li>
+                        <li class="float-left"><a href="#">led灯泡</a></li>
+                        <li class="float-left"><a href="#">壁灯</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="qiche" onmouseover="show('qiche1','qiche')" onmouseout="hide('qiche1','qiche')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="jiafang" onmouseover="show('jiafang1','jiafang')" onmouseout="hide('jiafang1','jiafang')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="yiyao" onmouseover="show('yiyao1','yiyao')" onmouseout="hide('yiyao1','yiyao')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="chuju" onmouseover="show('chuju1','chuju')" onmouseout="hide('chuju1','chuju')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tushu" onmouseover="show('tushu1','tushu')" onmouseout="hide('tushu1','tushu')" class="main-hidden">
+                <div class="clearfloat">
+                    <span class="float-left">成套家具></span>
+                    <ul>
+                        <li class="float-left"><a href="#">客厅成套家具</a></li>
+                        <li class="float-left"><a href="#">餐厅成套家具</a></li>
+                        <li class="float-left"><a href="#">卧室成套家具</a></li>
+                        <li class="float-left"><a href="#">儿童成套家具</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+                <div class="hengxian"></div>
+                <div class="clearfloat">
+                    <span class="float-left">客厅餐厅></span>
+                    <ul>
+                        <li class="float-left"><a href="#">沙发</a></li>
+                        <li class="float-left"><a href="#">布艺沙发</a></li>
+                        <li class="float-left"><a href="#">皮艺沙发</a></li>
+                        <li class="float-left"><a href="#">实木沙发</a></li>
+                        <li class="float-left"><a href="#">懒人沙发</a></li>
+                        <li class="float-left"><a href="#">电视柜</a></li>
+                        <li class="float-left"><a href="#">茶几</a></li>
+                        <li class="float-left"><a href="#">鞋柜</a></li>
+                        <li class="float-left"><a href="#">单人沙发</a></li>
+                        <li class="float-left"><a href="#">餐桌</a></li>
+                        <li class="float-left"><a href="#">餐椅</a></li>
+                        <li class="float-left"><a href="#">酒柜</a></li>
+                        <li class="float-left"><a href="#">餐边柜</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pinpai window-width clearfloat" id="showSearch">
+        <div class="zhibo float-left">
+            <a href="#"><img id="main-img" src="images/zhibo1.png" /></a>
+            <div class="min-img">
+                <a class="float-left" href="#"><img id="img1" onmouseover="change('main-img','img1')" src="images/zhibo1.png" /></a>
+                <a class="float-left" href="#"><img id="img2" onmouseover="change('main-img','img2')" src="images/zhibo2.png" /></a>
+                <a class="float-left" href="#"><img id="img3" onmouseover="change('main-img','img3')" src="images/zhibo3.png" /></a>
+            </div>
+        </div>
+        <ul class="pinpailogo">
+            <li onmouseover="showguanzhu('guanzhu1')" onmouseout="hideguanzhu('guanzhu1')">
+                <img src="images/honor.png" />
+                <div class="guanzhu" id="guanzhu1">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu2')" onmouseout="hideguanzhu('guanzhu2')">
+                <img src="images/stee.png" />
+                <div class="guanzhu" id="guanzhu2">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu3')" onmouseout="hideguanzhu('guanzhu3')">
+                <img src="images/xiaomi.png" />
+                <div class="guanzhu" id="guanzhu3">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu4')" onmouseout="hideguanzhu('guanzhu4')">
+                <img src="images/kingston.png" />
+                <div class="guanzhu" id="guanzhu4">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu5')" onmouseout="hideguanzhu('guanzhu5')">
+                <img src="images/meizu.png" />
+                <div class="guanzhu" id="guanzhu5">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu6')" onmouseout="hideguanzhu('guanzhu6')">
+                <img src="images/sanxing.png" />
+                <div class="guanzhu" id="guanzhu6">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu7')" onmouseout="hideguanzhu('guanzhu7')">
+                <img src="images/shandi.png" />
+                <div class="guanzhu" id="guanzhu7">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu8')" onmouseout="hideguanzhu('guanzhu8')">
+                <img src="images/shenzhou.png" />
+                <div class="guanzhu" id="guanzhu8">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu9')" onmouseout="hideguanzhu('guanzhu9')">
+                <img src="images/meidi.png" />
+                <div class="guanzhu" id="guanzhu9">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu10')" onmouseout="hideguanzhu('guanzhu10')">
+                <img src="images/lianxiang.png" />
+                <div class="guanzhu" id="guanzhu10">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu11')" onmouseout="hideguanzhu('guanzhu11')">
+                <img src="images/huawei.png" />
+                <div class="guanzhu" id="guanzhu11">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu12')" onmouseout="hideguanzhu('guanzhu12')">
+                <img src="images/lining.png" />
+                <div class="guanzhu" id="guanzhu12">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu13')" onmouseout="hideguanzhu('guanzhu13')">
+                <img src="images/zuk.png" />
+                <div class="guanzhu" id="guanzhu13">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu14')" onmouseout="hideguanzhu('guanzhu14')">
+                <img src="images/sony.png" />
+                <div class="guanzhu" id="guanzhu14">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu15')" onmouseout="hideguanzhu('guanzhu15')">
+                <img src="images/xuanlong.png" />
+                <div class="guanzhu" id="guanzhu15">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu16')" onmouseout="hideguanzhu('guanzhu16')">
+                <img src="images/taidian.png" />
+                <div class="guanzhu" id="guanzhu16">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu17')" onmouseout="hideguanzhu('guanzhu17')">
+                <img src="images/ad.png" />
+                <div class="guanzhu" id="guanzhu17">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu18')" onmouseout="hideguanzhu('guanzhu18')">
+                <img src="images/ms.png" />
+                <div class="guanzhu" id="guanzhu18">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu19')" onmouseout="hideguanzhu('guanzhu19')">
+                <img src="images/tplink.png" />
+                <div class="guanzhu" id="guanzhu19">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu20')" onmouseout="hideguanzhu('guanzhu20')">
+                <img src="images/zte.png" />
+                <div class="guanzhu" id="guanzhu20">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu21')" onmouseout="hideguanzhu('guanzhu21')">
+                <img src="images/aigo.png" />
+                <div class="guanzhu" id="guanzhu21">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu22')" onmouseout="hideguanzhu('guanzhu22')">
+                <img src="images/haier.png" />
+                <div class="guanzhu" id="guanzhu22">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu23')" onmouseout="hideguanzhu('guanzhu23')">
+                <img src="images/jiumu.png" />
+                <div class="guanzhu" id="guanzhu23">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+            <li onmouseover="showguanzhu('guanzhu24')" onmouseout="hideguanzhu('guanzhu24')">
+                <img src="images/deli.png" />
+                <div class="guanzhu" id="guanzhu24">
+                    <span>关注人数10</span>
+                    <a href="#">点击进入</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="window-width clearfloat">
+        <div class="xiezi float-left">
+            <span class="span1">潮流前沿</span>
+            <a onmouseover="imgBig('a')" onmouseout="imgSmall('a')" href="#">
+                <span class="span2">焕新</span><img id="a" src="images/xiezi.png">
+            </a>
+            <div class="hengxian3"></div>
+            <a onmouseover="imgBig('b')" onmouseout="imgSmall('b')" href="#">
+                <span class="span2">全球时尚</span><img id="b" src="images/xiezi2.jpg">
+            </a>
+        </div>
+        <div class="xiezi float-left">
+            <span class="span1">手机酷玩</span>
+            <a onmouseover="imgBig('c')" onmouseout="imgSmall('c')" href="#">
+                <span class="span2">手机馆</span><img id="c" src="images/shouji.png">
+            </a>
+            <div class="hengxian3"></div>
+            <a onmouseover="imgBig('d')" onmouseout="imgSmall('d')" href="#">
+                <span class="span2">酷玩街</span><img id="d" src="images/shoubiao.jpg">
+            </a>
+        </div>
+        <div class="xiezi float-left">
+            <span class="span1">品质生活</span>
+            <a onmouseover="imgBig('e')" onmouseout="imgSmall('e')" href="#">
+                <span class="span2">必抢</span><img id="e" src="images/shoubiao2.jpg">
+            </a>
+            <div class="hengxian3"></div>
+            <a onmouseover="imgBig('f')" onmouseout="imgSmall('f')" href="#">
+                <span class="span2">喵鲜生</span><img id="f" src="images/shengxian.jpg">
+            </a>
+        </div>
+        <div class="xiezi float-left">
+            <span class="span1">国际海购</span>
+            <a onmouseover="imgBig('g')" onmouseout="imgSmall('g')" href="#">
+                <span class="span2">识货</span><img id="g" src="images/naifen1.jpg">
+            </a>
+            <div class="hengxian3"></div>
+            <a onmouseover="imgBig('h')" onmouseout="imgSmall('h')" href="#">
+                <span class="span2">天猫国际官方直营</span><img id="h" src="images/naifen2.jpg">
+            </a>
+        </div>
+        <div class="xiezi1 float-left">
+            <span class="span1">个性推荐</span>
+            <a onmouseover="imgBig('i')" onmouseout="imgSmall('i')" href="#">
+                <span class="span2">囤货</span><img id="i" src="images/tunhuo.jpg">
+            </a>
+            <div class="hengxian3"></div>
+            <a onmouseover="imgBig('l')" onmouseout="imgSmall('l')" href="#">
+                <span class="span2">英明主妇</span><img id="l" src="images/xiezi3.jpg">
+            </a>
+        </div>
+    </div>
+
+    <div class="bottom">
+    	<div class="window-width">
+    		<a href="#"><img src="images/bottom.jpg"></a>
+    		<div class="hengxian4"></div>
+    		<div class="clearfloat">
+    			<ul>
+    				<li><span>购物指南</span></li>
+    				<li><a href="#">免费注册</a></li>
+    				<li><a href="#">开通支付宝</a></li>
+    				<li><a href="#">支付宝充值</a></li>
+    			</ul>
+    			<ul>
+    				<li><span>天猫保障</span></li>
+    				<li><a href="#">发票保障</a></li>
+    				<li><a href="#">售后规则</a></li>
+    				<li><a href="#">缺货赔付</a></li>
+    			</ul>
+    			<ul>
+    				<li><span>支付方式</span></li>
+    				<li><a href="#">快捷支付</a></li>
+    				<li><a href="#">信用卡</a></li>
+    				<li><a href="#">余额宝</a></li>
+    				<li><a href="#">蚂蚁花呗</a></li>
+    				<li><a href="#">货到付款</a></li>
+    			</ul>
+    			<ul>
+    				<li><span>商家服务</span></li>
+    				<li><a href="#">商家入驻</a></li>
+    				<li><a href="#">商家中心</a></li>
+    				<li><a href="#">天猫智库</a></li>
+    				<li><a href="#">天猫规则</a></li>
+    				<li><a href="#">物流服务</a></li>
+    				<li><a href="#">喵言喵语</a></li>
+    				<li><a href="#">运营服务</a></li>
+    			</ul>
+    			<ul>
+    				<li><span>手机天猫</span></li>
+    				<li><img src="images/erweima.png"></li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="bottom2">
+    	<div class="window-width">
+    	<img src="images/bottomlogo.png">
+    		<ul class="clearfloat">
+    			<li><a href="#">关于天猫</a></li>
+    			<li><a href="#">帮助中心</a></li>
+    			<li><a href="#">开放平台</a></li>
+    			<li><a href="#">诚聘英才</a></li>
+    			<li><a href="#">联系我们</a></li>
+    			<li><a href="#">网站合作</a></li>
+    			<li><a href="#">法律声明及隐私权政策</a></li>
+    			<li><a href="#">知识产权</a></li>
+    			<li><a href="#">廉正举报</a></li>
+    			<li><a href="#">规则意见征集</a></li>
+    		</ul>
+    		<ul class="clearfloat">
+    			<li><a href="#">阿里巴巴集团     |</a></li>
+    			<li><a href="#">淘宝网     |</a></li>
+    			<li><a href="#">天猫     |</a></li>
+    			<li><a href="#">聚划算      |</a></li>
+    			<li><a href="#">全球速卖通      |</a></li>
+    			<li><a href="#">阿里巴巴国际交易市场      |</a></li>
+    			<li><a href="#">1688      |</a></li>
+    			<li><a href="#">阿里妈妈      |</a></li>
+    			<li><a href="#">飞猪     |</a></li>
+    			<li><a href="#">阿里云计算</a></li>
+    		</ul>
+    	</div>
+    </div>
+</body>
+
+</html>
